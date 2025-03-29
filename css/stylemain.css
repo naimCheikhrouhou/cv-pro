@@ -1,0 +1,141 @@
+/* Base Reset & Body */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #e5e5e5;
+    color: #333;
+  }
+  
+  /* Header with Navigation */
+  header {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    animation-duration: 1s;
+    animation-name: open ;
+    
+}
+  header nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  header nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  header nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  header nav img {
+    width: 40px; /* Adjust size */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Add spacing between images */
+}
+header nav img :first-of-type{
+margin-left: 2000 px;
+}
+.instaimage{
+  position: absolute;
+  margin-left: 1150px;
+  top: 90px;
+}
+.faceimage{
+  position: absolute;
+  margin-left: 1000px;
+  top: 90px;
+}
+
+  /* Main Content Container */
+  .main-container {
+    display: flex;
+    background-color: #fff;
+    margin: 20px auto;
+    max-width: 1000px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  /* Left Side: Image */
+  .main-container .left-side {
+    flex: 1;
+    background: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    
+  }
+  
+  .main-container .left-side img {
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  /* Right Side: Text Content */
+  .main-container .right-side {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .main-container .right-side h1 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  
+  .main-container .right-side h2,
+  .main-container .right-side h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .main-container .right-side p {
+    line-height: 1.6;
+    font-size: 1em;
+  }
+  
+  .main-container .right-side a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .main-container .right-side a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1abc9c;
+    color: white;
+    margin-top: 20px;
+  }
+
+  @keyframes open {
+    0% {
+        height: 10000px;
+        opacity: 0;
+        overflow: hidden;
+    }
+    100% {
+        height: 100px; /* Set the desired final height */
+        opacity: 1;
+    }
+}

@@ -1,0 +1,22 @@
+
+.image-container {
+    display: inline-block;
+    text-align: center;
+    margin: 30px;
+    position: relative;
+  }
+  
+  .image {
+    width: 110px; /* Adjust size as needed */
+    height: 110px;
+  }
+  
+  .image-title {
+    position: absolute;
+    bottom: -40px; /* Adjust to control the distance from the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the title horizontally */
+    font-size: 14px;
+    color: #333;
+  }
+  
